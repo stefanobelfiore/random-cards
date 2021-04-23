@@ -54,9 +54,10 @@ footer {
 }
 
 .symbolDown {
-  padding-left: 75%;
+  padding-left: 10%;
   margin-top: 3rem;
   font-size: 2rem;
+  transform: rotate(0.5turn);
 }
 section {
   margin: auto;
