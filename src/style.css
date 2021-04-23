@@ -1,1 +1,66 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+button {
+  border-radius: 5rem;
+  height: 5rem;
+  width: 5rem;
+  margin-left: 70rem;
+}
+.container {
+  display: inline-flex;
+}
+.allCards {
+  margin: auto;
+  display: inline-flex;
+  align-content: center;
+}
+body {
+  margin-top: 40rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Texas_Hold%27em_Poker_Table_with_Blinds.svg/1920px-Texas_Hold%27em_Poker_Table_with_Blinds.svg.png");
+  height: 15rem;
+}
+.card {
+  background: white;
+  width: 13rem;
+  height: 20rem;
+  margin: auto;
+  border: solid;
+  border-color: black;
+  border-radius: 1rem;
+}
+.number {
+  margin: auto;
+  font-size: 5rem;
+}
+header {
+  height: 33%;
+}
+section {
+  display: flex;
+  height: 33%;
+}
+footer {
+  height: 33%;
+
+  margin-top: auto;
+}
+.symbolUp {
+  padding-left: 10%;
+  margin-top: 0%;
+  display: inline-flex;
+  font-size: 2rem;
+}
+
+.symbolDown {
+  padding-left: 75%;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+section {
+  margin: auto;
+}
+#dollar {
+  font-size: 3.5rem;
+}
