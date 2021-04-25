@@ -34,16 +34,17 @@ window.onload = function() {
   newSymbol3();
   newSymbol4();
   newSymbol5();
+  generateRandomCard();
 };
 
-function newCard1() {
+let newCard1 = () => {
   let randomCard = Math.floor(Math.random() * CARDS.length);
   let printedCard = CARDS[randomCard];
   const NUMBER1 = document.querySelector("#number1");
   NUMBER1.innerHTML = printedCard;
-}
+};
 
-function newSymbol1() {
+let newSymbol1 = () => {
   let randomSymbol = Math.floor(Math.random() * SYMBOLS.length);
   let printedSymbol = SYMBOLS[randomSymbol];
   const SYMBOLUP1 = document.querySelector("#symbolUp1");
@@ -54,15 +55,15 @@ function newSymbol1() {
   }
   SYMBOLUP1.innerHTML = printedSymbol;
   SYMBOLDOWN1.innerHTML = printedSymbol;
-}
+};
 //    ----card2------------------------------------------------
-function newCard2() {
+let newCard2 = () => {
   let randomCard = Math.floor(Math.random() * CARDS.length);
   let printedCard = CARDS[randomCard];
   const NUMBER2 = document.querySelector("#number2");
   NUMBER2.innerHTML = printedCard;
-}
-function newSymbol2() {
+};
+let newSymbol2 = () => {
   let randomSymbol = Math.floor(Math.random() * SYMBOLS.length);
   let printedSymbol = SYMBOLS[randomSymbol];
   const SYMBOLUP2 = document.querySelector("#symbolUp2");
@@ -73,15 +74,15 @@ function newSymbol2() {
   }
   SYMBOLUP2.innerHTML = printedSymbol;
   SYMBOLDOWN2.innerHTML = printedSymbol;
-}
+};
 // ---card3-----------------------
-function newCard3() {
+let newCard3 = () => {
   let randomCard = Math.floor(Math.random() * CARDS.length);
   let printedCard = CARDS[randomCard];
   const NUMBER3 = document.querySelector("#number3");
   NUMBER3.innerHTML = printedCard;
-}
-function newSymbol3() {
+};
+let newSymbol3 = () => {
   let randomSymbol = Math.floor(Math.random() * SYMBOLS.length);
   let printedSymbol = SYMBOLS[randomSymbol];
   const SYMBOLUP3 = document.querySelector("#symbolUp3");
@@ -92,15 +93,15 @@ function newSymbol3() {
   }
   SYMBOLUP3.innerHTML = printedSymbol;
   SYMBOLDOWN3.innerHTML = printedSymbol;
-}
+};
 // ---card4-------------------------------------------------------------------------------------
-function newCard4() {
+let newCard4 = () => {
   let randomCard = Math.floor(Math.random() * CARDS.length);
   let printedCard = CARDS[randomCard];
   const NUMBER4 = document.querySelector("#number4");
   NUMBER4.innerHTML = printedCard;
-}
-function newSymbol4() {
+};
+let newSymbol4 = () => {
   let randomSymbol = Math.floor(Math.random() * SYMBOLS.length);
   let printedSymbol = SYMBOLS[randomSymbol];
   const SYMBOLUP4 = document.querySelector("#symbolUp4");
@@ -111,15 +112,15 @@ function newSymbol4() {
   }
   SYMBOLUP4.innerHTML = printedSymbol;
   SYMBOLDOWN4.innerHTML = printedSymbol;
-}
+};
 // ----card5---------------------------------------------------------------------------------
-function newCard5() {
+let newCard5 = () => {
   let randomCard = Math.floor(Math.random() * CARDS.length);
   let printedCard = CARDS[randomCard];
   const NUMBER5 = document.querySelector("#number5");
   NUMBER5.innerHTML = printedCard;
-}
-function newSymbol5() {
+};
+let newSymbol5 = () => {
   let randomSymbol = Math.floor(Math.random() * SYMBOLS.length);
   let printedSymbol = SYMBOLS[randomSymbol];
   const SYMBOLUP5 = document.querySelector("#symbolUp5");
@@ -131,9 +132,20 @@ function newSymbol5() {
   }
   SYMBOLUP5.innerHTML = printedSymbol;
   SYMBOLDOWN5.innerHTML = printedSymbol;
-}
+};
 // ---------------------------eventButton----------------
-// function generateRandomCard() {
-//   const BUTTON = document.querySelector("#theMasterButton");
-//   BUTTON.addEventListener("click", event => {});
-// }
+let generateRandomCard = () => {
+  const BUTTON = document.querySelector("#theMasterButton");
+  BUTTON.addEventListener("click", () => {
+    newCard1();
+    newCard2();
+    newCard3();
+    newCard4();
+    newCard5();
+    newSymbol1();
+    newSymbol2();
+    newSymbol3();
+    newSymbol4();
+    newSymbol5();
+  });
+};
