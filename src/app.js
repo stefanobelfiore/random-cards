@@ -52,6 +52,9 @@ let newSymbol1 = () => {
   if (printedSymbol == "♥" || printedSymbol == "♦") {
     SYMBOLUP1.style.color = "red";
     SYMBOLDOWN1.style.color = "red";
+  } else if (printedSymbol == "♣" || printedSymbol == "♠") {
+    SYMBOLUP1.style.color = "black";
+    SYMBOLDOWN1.style.color = "black";
   }
   SYMBOLUP1.innerHTML = printedSymbol;
   SYMBOLDOWN1.innerHTML = printedSymbol;
@@ -71,6 +74,9 @@ let newSymbol2 = () => {
   if (printedSymbol == "♥" || printedSymbol == "♦") {
     SYMBOLUP2.style.color = "red";
     SYMBOLDOWN2.style.color = "red";
+  } else if (printedSymbol == "♣" || printedSymbol == "♠") {
+    SYMBOLUP2.style.color = "black";
+    SYMBOLDOWN2.style.color = "black";
   }
   SYMBOLUP2.innerHTML = printedSymbol;
   SYMBOLDOWN2.innerHTML = printedSymbol;
@@ -90,6 +96,9 @@ let newSymbol3 = () => {
   if (printedSymbol == "♥" || printedSymbol == "♦") {
     SYMBOLUP3.style.color = "red";
     SYMBOLDOWN3.style.color = "red";
+  } else if (printedSymbol == "♣" || printedSymbol == "♠") {
+    SYMBOLUP3.style.color = "black";
+    SYMBOLDOWN3.style.color = "black";
   }
   SYMBOLUP3.innerHTML = printedSymbol;
   SYMBOLDOWN3.innerHTML = printedSymbol;
@@ -109,6 +118,9 @@ let newSymbol4 = () => {
   if (printedSymbol == "♥" || printedSymbol == "♦") {
     SYMBOLUP4.style.color = "red";
     SYMBOLDOWN4.style.color = "red";
+  } else if (printedSymbol == "♣" || printedSymbol == "♠") {
+    SYMBOLUP4.style.color = "black";
+    SYMBOLDOWN4.style.color = "black";
   }
   SYMBOLUP4.innerHTML = printedSymbol;
   SYMBOLDOWN4.innerHTML = printedSymbol;
@@ -129,6 +141,9 @@ let newSymbol5 = () => {
   if (printedSymbol == "♥" || printedSymbol == "♦") {
     SYMBOLUP5.style.color = "red";
     SYMBOLDOWN5.style.color = "red";
+  } else if (printedSymbol == "♣" || printedSymbol == "♠") {
+    SYMBOLUP5.style.color = "black";
+    SYMBOLDOWN5.style.color = "black";
   }
   SYMBOLUP5.innerHTML = printedSymbol;
   SYMBOLDOWN5.innerHTML = printedSymbol;
